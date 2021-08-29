@@ -37,7 +37,7 @@ class Home extends Component {
                     </div> 
                 </div>
                 <div className="row mb-5 mx-auto">
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 my-auto">
                         <p>Hello Everyone, Welcome to my personal website!</p>
                         <p>My name is Liang (Leon) Cai and I am right now a master of computer engineering student at the University of Toronto. I have 1.5 years of internship experience and several project experience with software and hardware development, including embedded system, PCB design, web development. 
                             Also love solving problems and exploring the unknown. </p>
@@ -51,7 +51,7 @@ class Home extends Component {
                     <div className="col-12 col-md-6 ">
 
                         
-                    <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" style={{height: '380px'}}>
                         <div className="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -59,24 +59,21 @@ class Home extends Component {
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                            <img src={'/assets/1.jpg'} className="d-block w-100 h-100" alt="..." />
+                            <img src={'/assets/1.jpg'} className="d-block w-100" alt="1" style={{height: '380px'}}/>
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <p>First Internship in Calgary @ May, 2018</p>
+                            </div>
+                            </div>
+                            <div className="carousel-item w-100">
+                            <img src={'/assets/2.jpg'} className="d-block w-100" alt="2" style={{height: '380px'}}/>
+                            <div className="carousel-caption d-none d-md-block">
+                            <p>Graduated from University of Alberta @ June 2020</p>
                             </div>
                             </div>
                             <div className="carousel-item">
-                            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" className="d-block w-100" alt="..." />
+                            <img src={'/assets/3.jpg'} className="d-block w-100" alt="3" style={{height: '380px'}}/>
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                            </div>
-                            <div className="carousel-item">
-                            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" className="d-block w-100" alt="..." />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                            <p>Friends and I in Banff @June, 2019</p>
                             </div>
                             </div>
                         </div>
