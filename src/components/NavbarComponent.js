@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../logo-design.png';
 
 class Header extends Component {
 
@@ -10,15 +12,17 @@ class Header extends Component {
       return (
         <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container-fluid">
-          {/* <a className="navbar-brand text-white text-uppercase"  href="#">Liang Cai</a> */}
+          <Link className="navbar-brand"  to="/">
+              <img src={logo} alt="logo" height="35px" />
+          </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+            <span><i class="fas fa-bars" style={{color: '#fff'}}></i></span>
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto">
               <li className="nav-item">
-                <a className="nav-link text-white text-uppercase mx-5" aria-current="page" href="#" >About <i class="fas fa-house-user"></i></a>
+                <a className="nav-link text-white text-uppercase mx-5" aria-current="page" href="#" >About <i class="fas fa-info-circle"></i></a>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-white text-uppercase mx-5" href="#">Education <i class="fas fa-university"></i></a>
