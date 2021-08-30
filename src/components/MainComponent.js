@@ -8,6 +8,7 @@ import Details from './DetailsComponent';
 import NotFound from './NotFoundComponent';
 
 import { EDUCATION } from '../data/education';
+import { EXPERIENCE } from '../data/experience';
 
 
 class Main extends Component {

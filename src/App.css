@@ -19,7 +19,7 @@
 
 .particle {
   background-color: #232741;
-  background-image: url('./Moon.png');
+  background-image: url('./data/Moon.png');
   background-repeat: no-repeat;
   background-size: 15%;
   background-position: 90% 10%;

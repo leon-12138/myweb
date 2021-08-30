@@ -12,7 +12,6 @@ function RenderEducation({one}) {
                 <h3 className="card-title text-uppercase">{one.headerTitle}</h3>
                 <h5 className="card-title">{one.headerSubTitle}</h5>
                 <p className="card-text">{one.headerText}</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
         </div>
         </div>
@@ -31,7 +30,7 @@ class Home extends Component {
         return(
             <React.Fragment>
 
-            {/* <ParticlesBackground /> */}
+            <ParticlesBackground />
             <br></br>
 
             <div className="container">
