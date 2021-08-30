@@ -12,7 +12,7 @@ function RenderEducation({one}) {
     return(
         <div className="col-10 col-lg-5 mx-auto mb-5 d-flex align-items-stretch" >
         <div className="card" style={{width: '25rem'}}>
-            <img src={one.img} className="card-img-top" alt="school" />
+            <img src={require('../assets/'+one.img).default} className="card-img-top" alt="school" />
             <div className="card-body">
                 <h3 className="card-title text-uppercase">{one.headerTitle}</h3>
                 <h5 className="card-title">{one.headerSubTitle}</h5>
@@ -127,7 +127,7 @@ class Home extends Component {
                     </div> 
                 </div>
                 <div className="row mt-4">
-                    <p>projects5</p>
+                    <p>projects555555555555</p>
                 </div>
 
             </div>
