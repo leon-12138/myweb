@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-
 import ParticlesBackground from './ParticlesComponent';
 
+import pic1 from '../assets/1.jpg';
+import pic2 from '../assets/2.jpg';
+import pic3 from '../assets/3.jpg';
+
+
 function RenderEducation({one}) {
+
     return(
         <div className="col-10 col-lg-5 mx-auto mb-5 d-flex align-items-stretch" >
         <div className="card" style={{width: '25rem'}}>
@@ -61,19 +66,19 @@ class Home extends Component {
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                            <img src={'./assets/1.jpg'} className="d-block w-100" alt="1" style={{height: '380px'}}/>
+                            <img src={pic1} className="d-block w-100" alt="pic1" style={{height: '380px'}}/>
                             <div className="carousel-caption d-none d-md-block">
                                 <p>First Internship in Calgary @ May, 2018</p>
                             </div>
                             </div>
                             <div className="carousel-item w-100">
-                            <img src={'./assets/2.jpg'} className="d-block w-100" alt="2" style={{height: '380px'}}/>
+                            <img src={pic2} className="d-block w-100" alt="pic2" style={{height: '380px'}}/>
                             <div className="carousel-caption d-none d-md-block">
                             <p>Graduated from University of Alberta @ June 2020</p>
                             </div>
                             </div>
                             <div className="carousel-item">
-                            <img src={'./assets/3.jpg'} className="d-block w-100" alt="3" style={{height: '380px'}}/>
+                            <img src={pic3} className="d-block w-100" alt="pic3" style={{height: '380px'}}/>
                             <div className="carousel-caption d-none d-md-block">
                             <p>Friends and I in Banff @June, 2019</p>
                             </div>
@@ -122,7 +127,7 @@ class Home extends Component {
                     </div> 
                 </div>
                 <div className="row mt-4">
-                    <p>projects</p>
+                    <p>projects5</p>
                 </div>
 
             </div>
