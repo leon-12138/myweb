@@ -10,7 +10,7 @@ class Header extends Component {
   
     render() {
       return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark" style={{position: 'sticky', top: '0', zIndex: '1'}}>
         <div className="container-fluid">
           <Link className="navbar-brand"  to="/">
               <img src={logo} alt="logo" height="35px" />
@@ -22,16 +22,16 @@ class Header extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto">
               <li className="nav-item">
-                <a className="nav-link text-white text-uppercase mx-5" aria-current="page" href="#" >About <i class="fas fa-info-circle"></i></a>
+                <a className="nav-link text-white text-uppercase mx-5" aria-current="page" href="#about" >About <i class="fas fa-info-circle"></i></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white text-uppercase mx-5" href="#">Education <i class="fas fa-university"></i></a>
+                <a className="nav-link text-white text-uppercase mx-5" href="#edu">Education <i class="fas fa-university"></i></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white text-uppercase mx-5" href="#">Experience <i class="fas fa-briefcase"></i></a>
+                <a className="nav-link text-white text-uppercase mx-5" href="#exp">Experience <i class="fas fa-briefcase"></i></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white text-uppercase mx-5" href="#">Project <i class="fas fa-tasks"></i></a>
+                <a className="nav-link text-white text-uppercase mx-5" href="#pro">Project <i class="fas fa-tasks"></i></a>
               </li>
             </ul>
           </div>

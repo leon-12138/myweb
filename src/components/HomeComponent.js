@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
-
+import ParticlesBackground from './ParticlesComponent';
 
 function RenderEducation({one}) {
     return(
@@ -29,8 +29,13 @@ class Home extends Component {
 
     render() {
         return(
+            <React.Fragment>
+
+            {/* <ParticlesBackground /> */}
+            <br></br>
+
             <div className="container">
-                <div className="row">
+                <div className="row" id="about">
                     <div className="col-12">
                         <h3>About Myself</h3>
                         <hr />
@@ -48,10 +53,8 @@ class Home extends Component {
                         <a className="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/l_cai_/" role="button" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
                     </div>
 
-                    <div className="col-12 col-md-6 ">
-
-                        
-                    <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" style={{height: '380px'}}>
+                    <div className="col-12 col-md-6 mt-2">
+                    <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" style={{height: '380px', zIndex:'0'}}>
                         <div className="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -86,18 +89,15 @@ class Home extends Component {
                             <span className="visually-hidden">Next</span>
                         </button>
                         </div>
-
-
-
-
-
                     </div>
                 </div>
 
-                <div className="col-12">
-                    <h3>Education History</h3>
-                    <hr />
-                </div> 
+                <div className="row"  id="edu">
+                    <div className="col-12">
+                        <h3>Education History</h3>
+                        <hr />
+                    </div> 
+                </div>
                 <div className="row mt-4">
                     {this.props.education.map((one) => {
                         return(
@@ -105,7 +105,29 @@ class Home extends Component {
                         );
                     })}
                 </div>
+
+                <div className="row" id="exp">
+                    <div className="col-12">
+                        <h3>Work Experience</h3>
+                        <hr />
+                    </div> 
+                </div>
+                <div className="row mt-4">
+                    <p>exp</p>
+                </div>
+                
+                <div className="row mt-4" id="pro">
+                    <div className="col-12">
+                        <h3>Projects</h3>
+                        <hr />
+                    </div> 
+                </div>
+                <div className="row mt-4">
+                    <p>prp</p>
+                </div>
+
             </div>
+            </React.Fragment>
         );
     }
 }
