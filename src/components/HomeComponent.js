@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import ParticlesBackground from './ParticlesComponent';
+import Vertical from './VerticalComponent';
 
 import pic1 from '../assets/1.jpg';
 import pic2 from '../assets/2.jpg';
@@ -117,7 +118,7 @@ class Home extends Component {
                     </div> 
                 </div>
                 <div className="row mt-4">
-                    <p>exp</p>
+                    <Vertical />
                 </div>
                 
                 <div className="row mt-4" id="pro">
