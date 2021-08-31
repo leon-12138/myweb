@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import {ReactComponent as WorkIcon } from '../assets/work.svg';
 import AccountTreeIcon from '@material-ui/icons/AccountTree';
-import StarsIcon from '@material-ui/icons/Stars';
+import { Link } from 'react-router-dom';
 
 
 class Vertical extends Component {
@@ -10,61 +10,92 @@ class Vertical extends Component {
     render() {
         return(
             <VerticalTimeline className="custom-vline">
+                
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="2011 - present"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<WorkIcon />}
+                    className="vertical-timeline-element--education"
+                    contentStyle={{ background: 'rgb(233, 30, 99)', color: '#000' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
+                    date="Sep, 2020 - Dec, 2020"
+                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#000' }}
+                    icon={<AccountTreeIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                    <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="2010 - 2011"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Art Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>Creative Direction, User Experience, Visual Design, SEO, Online Marketing</p>
+                    <h4 className="vertical-timeline-element-title">Flask Web Development Project</h4>
+                    <h6 className="vertical-timeline-element-subtitle">University of Toronto</h6>
+                    <p>
+                        <span className="badge bg-secondary">Flask, Bootstrap</span> &nbsp;
+                        <span className="badge bg-secondary">Python, Html, Css</span> &nbsp; 
+                        <span className="badge bg-secondary">AWS, EC2, S3, Load-Balancer, MySQL</span> &nbsp;
+                    </p>
+                    <Link to="/details">
+                        <div className="mt-2">
+                        <button type="button" className="btn btn-secondary " >View More</button>
+                        </div>
+                    </Link>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
-                    contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    contentStyle={{ background: 'rgb(233, 30, 99)', color: '#000' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
-                    date="April 2013"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    date="Jan 2020 - May, 2020"
+                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#000' }}
                     icon={<AccountTreeIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                    <p>Strategy, Social Media</p>
+                    <h4 className="vertical-timeline-element-title">Datalogger Capstone Project</h4>
+                    <h6 className="vertical-timeline-element-subtitle">University of Alberta</h6>
+                    <p>
+                        <span className="badge bg-secondary">Arduino, Sensor development</span> &nbsp;
+                        <span className="badge bg-secondary">C Programming </span> &nbsp; 
+                        <span className="badge bg-secondary">Data Communication</span> &nbsp;
+                    </p>
+                    <Link to="/details">
+                        <div className="mt-2">
+                        <button type="button" className="btn btn-secondary" >View More</button>
+                        </div>
+                    </Link>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
-                    date="November 2012"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<AccountTreeIcon />}
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                    date="Sep, 2018 - Sep, 2019"
+                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    icon={<WorkIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                    <p>Creative Direction, User Experience, Visual Design</p>
+                    <h4 className="vertical-timeline-element-title">R&D Engineer Internship</h4>
+                    <h6 className="vertical-timeline-element-subtitle">Scientific Drilling International, Calgary, Canada</h6>
+                    <p>
+                        <span className="badge bg-secondary">Sensor Development</span> &nbsp;
+                        <span className="badge bg-secondary">C programming</span> &nbsp;
+                        <span className="badge bg-secondary">Eagle PCB design</span> &nbsp;                   
+                    </p>
+                    <Link to="/details">
+                        <div className="mt-2">
+                        <button type="button" className="btn btn-secondary" >View More</button>
+                        </div>                    </Link>
                 </VerticalTimelineElement>
+
                 <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                    icon={<StarsIcon />}
-                />
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                    date="May, 2017 - Dec, 2017"
+                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    icon={<WorkIcon />}
+                >
+                    <h4 className="vertical-timeline-element-title">Fabrication Engineer Internship</h4>
+                    <h6 className="vertical-timeline-element-subtitle">Ingenuity Technology, Edmonton, Canada</h6>
+                    <p>
+                        <span className="badge bg-secondary">Nano-Fabrication Clean Room</span> &nbsp;
+                        <span className="badge bg-secondary">L-edit, Sketch Up, Matlab</span> &nbsp;                   
+                    </p>
+                    <Link to="/details">
+                        <div className="mt-2">
+                        <button type="button" className="btn btn-secondary" >View More</button>
+                        </div>          
+                    </Link>
+                </VerticalTimelineElement>
                 </VerticalTimeline>
         );
     }

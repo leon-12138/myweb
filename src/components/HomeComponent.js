@@ -52,10 +52,10 @@ class Home extends Component {
                         <p>My name is Liang (Leon) Cai and I am right now a master of computer engineering student at the University of Toronto. I have 1.5 years of internship experience and several project experience with software and hardware development, including embedded system, PCB design, web development. 
                             Also love solving problems and exploring the unknown. </p>
                         <span >Find Me Here : </span>
-                        <a className="btn btn-outline-dark btn-floating m-1" href="mailto:cailiang1997@gmail.com" role="button" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope"></i></a>
-                        <a className="btn btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/leoncai" role="button" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
-                        <a className="btn btn-outline-dark btn-floating m-1" href="https://github.com/leon-12138" role="button" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-                        <a className="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/l_cai_/" role="button" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                        <Link className="btn btn-outline-dark btn-floating m-1" href="mailto:cailiang1997@gmail.com" role="button" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope"></i></Link>
+                        <Link className="btn btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/leoncai" role="button" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></Link>
+                        <Link className="btn btn-outline-dark btn-floating m-1" href="https://github.com/leon-12138" role="button" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></Link>
+                        <Link className="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/l_cai_/" role="button" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></Link>
                     </div>
 
                     <div className="col-12 col-md-6 mt-2">
@@ -111,26 +111,16 @@ class Home extends Component {
                     })}
                 </div>
 
-                <div className="row" id="exp">
+                <div className="row" id="exp" >
                     <div className="col-12">
-                        <h3>Work Experience</h3>
+                        <h3>Experience & Projects</h3>
                         <hr />
                     </div> 
                 </div>
                 <div className="row mt-4">
                     <Vertical />
                 </div>
-                
-                <div className="row mt-4" id="pro">
-                    <div className="col-12">
-                        <h3>Projects</h3>
-                        <hr />
-                    </div> 
-                </div>
-                <div className="row mt-4">
-                    <p>projects555555555555</p>
-                </div>
-
+                <br></br>
             </div>
             </React.Fragment>
         );
@@ -138,9 +128,4 @@ class Home extends Component {
 }
 
 
-
 export default Home;
-
-
-   
-

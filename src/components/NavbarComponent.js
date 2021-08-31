@@ -31,7 +31,7 @@ class Header extends Component {
                 <a className="nav-link text-white text-uppercase mx-5" href="#exp">Experience <i className="fas fa-briefcase"></i></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white text-uppercase mx-5" href="#pro">Project <i className="fas fa-tasks"></i></a>
+                <a className="nav-link text-white text-uppercase mx-5" href="#exp">Project <i className="fas fa-tasks"></i></a>
               </li>
             </ul>
           </div>
