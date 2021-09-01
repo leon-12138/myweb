@@ -24,7 +24,7 @@ class Main extends Component {
           <div>
             <Header />
             <Switch>
-                <Route exact path="/" component={ () => <Home education={this.state.education} />} />
+                <Route exact path={process.env.PUBLIC_URL + '/'} component={ () => <Home education={this.state.education} />} />
                 <Route component={NotFound} />
             </Switch>
             <Footer />
