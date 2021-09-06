@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-vertical-timeline-component/style.min.css';
+import 'react-image-lightbox/style.css'; 
 import React, {Component} from 'react';
 import { BrowserRouter } from 'react-router-dom';
 

@@ -9,6 +9,7 @@ import NotFound from './NotFoundComponent';
 import { EDUCATION } from '../data/education';
 
 
+
 class Main extends Component {
 
     constructor(props) {
