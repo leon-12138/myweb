@@ -3,6 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import Details from './DetailsComponent';
 import { ReactComponent as WorkIcon } from '../assets/work.svg';
 import AccountTreeIcon from '@material-ui/icons/AccountTree';
+import CloudIcon from '@material-ui/icons/Cloud';
 
 import p1_1 from '../assets/p1-1.png';
 import p1_2 from '../assets/p1-2.png';
@@ -22,6 +23,21 @@ class Vertical extends Component {
     render() {
         return (
             <VerticalTimeline className="custom-vline">
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--education"
+                    contentStyle={{ background: '#FF9900', color: '#000' }}
+                    contentArrowStyle={{ borderRight: '7px solid #FF9900' }}
+                    date="Oct, 2022 - Now"
+                    iconStyle={{ background: '#FF9900', color: '#000' }}
+                    icon={<CloudIcon />}
+                >
+                    <h4 className="vertical-timeline-element-title">Software Dev Engineer</h4>
+                    <h6 className="vertical-timeline-element-subtitle">Amazon AWS, Toronto, Canada</h6>
+                    <p>
+                        <span className="badge bg-secondary">AWS, CDK, Infrasturcture</span> &nbsp;
+                    </p>
+                    
+                </VerticalTimelineElement>
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
