@@ -10,7 +10,7 @@
   My personal website
   <br />
   <br />
-  <a href="https://liangcai.me">View my web</a>
+  <a href="https://cailiang.me">View my web</a>
 </p>
 
 
